@@ -25,8 +25,8 @@ class MyMenu extends Component {
             <div>
                 <Drawer open={this.state.open} docked={false}
                         onRequestChange={this.onRequestChange}>
-                    <MenuItem>Menu Item</MenuItem>
-                    <MenuItem>Menu Item 2</MenuItem>
+                    <MenuItem onClick={this.onMenuClick} href="#/">Início</MenuItem>
+                    <MenuItem onClick={this.onMenuClick} href="#/eventos">Eventos</MenuItem>
                 </Drawer>
                 <AppBar title="Teste"
                         onLeftIconButtonTouchTap={this.onMenuClick}/>
